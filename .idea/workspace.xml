@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd01531b-163a-40d8-a9f8-c071e8ab6198" name="更改" comment="feat(.service): 项目迁移">
-      <change afterPath="$PROJECT_DIR$/app/sessions/[id]/novnc/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sessions/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sessions/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/use-mobile.ts" afterDir="false" />
+    <list default="true" id="cd01531b-163a-40d8-a9f8-c071e8ab6198" name="更改" comment="feat(.service): dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776087507921</updated>
-      <workItem from="1776087508997" duration="2647000" />
+      <workItem from="1776087508997" duration="27711000" />
     </task>
     <task id="LOCAL-00001" summary="feat(.service):init">
       <option name="closed" value="true" />
@@ -121,7 +119,39 @@
       <option name="project" value="LOCAL" />
       <updated>1776092661822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(.service): 项目迁移">
+      <option name="closed" value="true" />
+      <created>1776092901894</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776092901894</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(.service): types.ts">
+      <option name="closed" value="true" />
+      <created>1779630037312</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779630037312</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(.service): api">
+      <option name="closed" value="true" />
+      <created>1779630210556</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779630210556</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(.service): dependencies">
+      <option name="closed" value="true" />
+      <created>1779631580448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779631580448</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +160,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(.service):init" />
     <MESSAGE value="feat(.service): 项目迁移" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(.service): 项目迁移" />
+    <MESSAGE value="feat(.service): types.ts" />
+    <MESSAGE value="feat(.service): api" />
+    <MESSAGE value="feat(.service): dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(.service): dependencies" />
   </component>
 </project>
