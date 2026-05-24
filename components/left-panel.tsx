@@ -53,7 +53,7 @@ export function LeftPanel() {
                             {/* 中间内容 */}
                             <ItemContent className="gap-0">
                                 <ItemTitle
-                                    className="text-md font-medium line-clamp-1">图片合并为PDF的操作计划</ItemTitle>
+                                    className="text-md font-medium line-clamp-1">图片1合并为PDF的操作计划</ItemTitle>
                                 <ItemDescription
                                     className="text-xs line-clamp-1">您上传的四张图片已成功合并成为一个PDF文件</ItemDescription>
                             </ItemContent>
