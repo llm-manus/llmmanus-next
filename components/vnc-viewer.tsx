@@ -1,45 +1,58 @@
 'use client'
 
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from 'react'
 import RFB from '@novnc/novnc/lib/rfb'
+
+export type VNCStatus = 'connecting' | 'connected' | 'disconnected' | 'error'
 
 interface VNCViewerProps {
     url: string
     viewOnly?: boolean
+    onStatusChange?: (status: VNCStatus, detail?: string) => void
 }
 
-export function VNCViewer(
-    {url, viewOnly}: VNCViewerProps,
-) {
-    const displayRef = useRef(null)
+export function VNCViewer({ url, viewOnly, onStatusChange }: VNCViewerProps) {
+    const displayRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        // 1.检查引用是否存在
         if (!displayRef.current) return
 
-        // 2.创建代理连接
-        const rfb = new RFB(displayRef.current, url, {
-            credentials: {
-                password: '',
-                username: '',
-                target: ''
-            }
-        })
+        onStatusChange?.('connecting')
 
-        // 3.配置基础属性
-        rfb.viewOnly = viewOnly || false
-        rfb.scaleViewport = true
-        rfb.background = '#000'
-        rfb.addEventListener('connect', () => console.log('Contented'))
-        rfb.addEventListener('disconnect', () => console.log('Disconnected'))
+        let rfb: RFB | null = null
+        try {
+            rfb = new RFB(displayRef.current, url, {
+                credentials: { password: '', username: '', target: '' },
+            })
 
-        return () => rfb.disconnect()
-    }, [url, viewOnly])
+            rfb.viewOnly = viewOnly || false
+            rfb.scaleViewport = true
+            rfb.background = '#000'
+
+            rfb.addEventListener('connect', () => onStatusChange?.('connected'))
+            rfb.addEventListener('disconnect', (e: CustomEvent) => {
+                if (e.detail?.clean) {
+                    onStatusChange?.('disconnected', '连接已断开')
+                } else {
+                    onStatusChange?.('error', '沙箱环境可能已关闭或连接异常断开')
+                }
+            })
+            rfb.addEventListener('securityfailure', () => {
+                onStatusChange?.('error', '认证失败，无法连接到沙箱')
+            })
+        } catch {
+            onStatusChange?.('error', '无法建立连接，沙箱环境可能未启动')
+        }
+
+        return () => {
+            try { rfb?.disconnect() } catch { /* noop */ }
+        }
+    }, [url, viewOnly, onStatusChange])
 
     return (
         <div
             ref={displayRef}
-            style={{width: '100%', height: '100vh', background: '#000'}}
+            style={{ width: '100%', height: '100%', background: '#000' }}
         />
     )
 }
