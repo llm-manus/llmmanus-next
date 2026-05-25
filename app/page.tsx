@@ -1,8 +1,19 @@
-import {ChatHeader} from "@/components/chat-header";
-import {ChatInput} from "@/components/chat-input";
-import {SuggestedQuestions} from "@/components/suggested-questions";
+'use client'
+
+import {useRef, useState} from 'react'
+import {useRouter} from 'next/navigation'
+import {ChatHeader} from '@/components/chat-header'
+import {ChatInput} from '@/components/chat-input'
+import {SuggestedQuestions} from '@/components/suggested-questions'
+import {sessionApi} from '@/lib/api/session'
+import type {FileInfo} from '@/lib/api/types'
+import {toast} from 'sonner'
 
 export default function Page() {
+    const router = useRouter()
+    // const chatInputRef = useRef<ChatInput>(null)
+
+
     return (
         <div className="h-full flex flex-col">
             {/* 顶部header */}
