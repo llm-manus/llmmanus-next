@@ -1,19 +1,31 @@
 'use client'
 
-import {cn} from "@/lib/utils";
-import {Button} from "@/components/ui/button";
+import {cn} from '@/lib/utils'
+import {Button} from '@/components/ui/button'
+import {suggestedQuestions} from '@/config/app.config'
 
 interface SuggestedQuestionsProps {
-    className?: string;
+    className?: string
+    onQuestionClick?: (question: string) => void
 }
 
-export function SuggestedQuestions({className}: SuggestedQuestionsProps) {
+export function SuggestedQuestions({className, onQuestionClick}: SuggestedQuestionsProps) {
+    const handleClick = (question: string) => {
+        onQuestionClick?.(question)
+    }
+
     return (
-        <div className={cn('flex flex-wrap gap-2', className)}>
-            <Button variant="outline" className="cursor-pointer">与最高的建筑相比，艾尔菲铁塔多高？</Button>
-            <Button variant="outline" className="cursor-pointer">Github上最热门的存储库有哪些？</Button>
-            <Button variant="outline" className="cursor-pointer">如何看待中国的外卖大战？</Button>
-            <Button variant="outline" className="cursor-pointer">超加工食物与减抗有关吗？</Button>
+        <div className={cn('flex flex-wrap gap-2 sm:gap-3', className)}>
+            {suggestedQuestions.map((question, index) => (
+                <Button
+                    key={index}
+                    variant="outline"
+                    className="cursor-pointer text-xs sm:text-sm whitespace-normal break-words"
+                    onClick={() => handleClick(question)}
+                >
+                    {question}
+                </Button>
+            ))}
         </div>
     )
 }
