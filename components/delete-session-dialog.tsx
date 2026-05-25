@@ -65,3 +65,5 @@ export function DeleteSessionDialog({open, onOpenChange, onConfirm}: DeleteSessi
         </Dialog>
     )
 }
+
+

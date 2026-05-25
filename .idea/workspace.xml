@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd01531b-163a-40d8-a9f8-c071e8ab6198" name="更改" comment="feat(.service): home">
+    <list default="true" id="cd01531b-163a-40d8-a9f8-c071e8ab6198" name="更改" comment="feat(.service): 文件">
+      <change afterPath="$PROJECT_DIR$/components/tool-preview-panel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/a2a-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/bash-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/browser-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/default-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/file-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/mcp-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/message-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/search-tool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/tool-badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tool-use/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/attachments-message.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/attachments-message.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat-input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/manus-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/manus-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/manus-settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/manus-settings.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/session-events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/session-events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/delete-session-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/delete-session-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/plan-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/plan-panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/session-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/session-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/session-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/session-item.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/linyongqi/WebstormProjects/llmmanus-next",
+    "last_opened_file_path": "/Users/linyongqi/WebstormProjects/llmmanus-next/components/tool-use",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +70,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/tool-use" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -107,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776087507921</updated>
-      <workItem from="1776087508997" duration="35335000" />
+      <workItem from="1776087508997" duration="35643000" />
     </task>
     <task id="LOCAL-00001" summary="feat(.service):init">
       <option name="closed" value="true" />
@@ -189,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779713632496</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat(.service): 文件">
+      <option name="closed" value="true" />
+      <created>1779720512407</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1779720512407</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +221,7 @@
     <MESSAGE value="feat(.service): dependencies" />
     <MESSAGE value="feat(.service): session-list" />
     <MESSAGE value="feat(.service): home" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(.service): home" />
+    <MESSAGE value="feat(.service): 文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(.service): 文件" />
   </component>
 </project>

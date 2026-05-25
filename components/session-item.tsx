@@ -1,8 +1,8 @@
 'use client'
 
-import {useCallback, useEffect, useState} from "react"
-import {CircuitBoard, Loader2, MoreHorizontal, Trash} from "lucide-react"
-import {Button} from "@/components/ui/button"
+import {useCallback, useEffect, useState} from 'react'
+import {CircuitBoard, Loader2, MoreHorizontal, Trash} from 'lucide-react'
+import {Button} from '@/components/ui/button'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -17,7 +17,7 @@ import type {Session} from '@/lib/api'
 type SessionItemProps = {
     session: Session
     isActive: boolean
-    onClick: (session: string) => void
+    onClick: (sessionId: string) => void
     onDelete: (session: Session) => void
 }
 
@@ -30,7 +30,7 @@ export function SessionItem({session, isActive, onClick, onDelete}: SessionItemP
 
     useEffect(() => {
         setMounted(true)
-    }, []);
+    }, [])
 
     const handleClick = useCallback(() => {
         onClick(session.session_id)
@@ -101,3 +101,5 @@ export function SessionItem({session, isActive, onClick, onDelete}: SessionItemP
         </Item>
     )
 }
+
+
