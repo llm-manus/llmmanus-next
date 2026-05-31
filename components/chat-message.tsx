@@ -4,11 +4,11 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { CheckIcon, ChevronDown, Languages } from 'lucide-react'
 import { ManusIcon } from '@/components/manus-icon'
-import { ToolUse } from '@/components/tool-use'
 import { AttachmentsMessage } from '@/components/attachments-message'
 import { MarkdownContent } from '@/components/markdown-content'
 import type { ToolEvent } from '@/lib/api/types'
 import { type TimelineItem, type AttachmentFile, getToolTimeLabel } from '@/lib/session-events'
+import {ToolUse} from "@/components/tool-use";
 
 export interface ChatMessageProps {
     className?: string
